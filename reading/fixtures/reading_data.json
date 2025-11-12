@@ -1,0 +1,68 @@
+[
+    {
+      "id": "reading-part1-1",
+      "title": "Part 1 — Fill in the Gaps",
+      "level": "A2",
+      "type": "fill-the-gaps",
+      "language": "en",
+      "passage": "Last weekend, my friends and I went to the (1) __ to spend the day together. The weather was (2) __, so we decided to have a picnic near the lake. We brought some sandwiches, drinks, and a big (3) __ to sit on. After lunch, we played football and took a lot of (4) __. It was a really (5) __ day, and we all had fun.",
+      "segments": [
+        "Last weekend, my friends and I went to the ",
+        {"gap": 1},
+        " to spend the day together. The weather was ",
+        {"gap": 2},
+        ", so we decided to have a picnic near the lake. We brought some sandwiches, drinks, and a big ",
+        {"gap": 3},
+        " to sit on. After lunch, we played football and took a lot of ",
+        {"gap": 4},
+        ". It was a really ",
+        {"gap": 5},
+        " day, and we all had fun."
+      ],
+      "options": [
+        {"key": "A", "word": "photos"},
+        {"key": "B", "word": "park"},
+        {"key": "C", "word": "sunny"},
+        {"key": "D", "word": "blanket"},
+        {"key": "E", "word": "fun"},
+        {"key": "F", "word": "shop"}
+      ],
+      "answers": {
+        "1": "B",
+        "2": "C",
+        "3": "D",
+        "4": "A",
+        "5": "E"
+      },
+      "extra": "F",
+      "instructions": "Choose the correct word (A–F) for each gap. One option is extra and should not be used."
+    },
+    {
+      "id": "reading-part2-ads",
+      "title": "Part 2 — Matching Advertisements",
+      "level": "A2",
+      "type": "matching",
+      "language": "en",
+      "instructions": "Read the descriptions (1–5) and match them with the correct advertisement (A–J). There are five extra advertisements you do not need to use.",
+      "ads": [
+        {"key": "A", "image": "/images/ads/bike.jpg", "text": "City Bikes — Buy one, get one half price! Great for students. Visit www.citybikes.com."},
+        {"key": "B", "image": "/images/ads/3.jpg", "text": "RiverPool — Open every day from 6 am to 9 pm. Family tickets available."},
+        {"key": "C", "image": "/images/ads/1.png", "text": "Sunny Café — Try our new breakfast menu! Free Wi-Fi and takeaway coffee."},
+        {"key": "D", "image": "/images/ads/3.jpg", "text": "BookLand — Buy 3 books and get the 4th free! Huge selection of novels and comics."},
+        {"key": "E", "image": "/images/ads/4.jpg", "text": "Pet Care Center — Professional grooming for dogs and cats. Call us at 555-1234."},
+        {"key": "F", "image": "/images/ads/5.jpg", "text": "Music4U — Guitar lessons for all ages. First lesson free!"},
+        {"key": "G", "image": "/images/ads/6.jpg", "text": "Green Park — A quiet place for walking, jogging, and relaxing near the lake."},
+        {"key": "H", "image": "/images/ads/7.jpg", "text": "FloraShop — Beautiful flowers for all occasions. Free delivery in the city."},
+        {"key": "I", "image": "/images/ads/8.jpg", "text": "Star Cinema — Watch the latest movies with friends! Student discounts every Monday."},
+        {"key": "J", "image": "/images/ads/9.jpg", "text": "FitZone Gym — New members get a free personal training session."}
+      ],
+      "questions": [
+        {"id": 1, "text": "Alice wants to buy a bicycle but doesn’t want to spend too much money.", "answer": "A"},
+        {"id": 2, "text": "Tom enjoys swimming early in the morning before work.", "answer": "B"},
+        {"id": 3, "text": "Mary needs a place where she can drink coffee and use her laptop for free.", "answer": "C"},
+        {"id": 4, "text": "Ben wants to learn to play the guitar but doesn’t want to pay for the first class.", "answer": "F"},
+        {"id": 5, "text": "Anna wants to buy some flowers for her friend’s birthday and have them delivered.", "answer": "H"}
+      ]
+    }
+  ]
+  
