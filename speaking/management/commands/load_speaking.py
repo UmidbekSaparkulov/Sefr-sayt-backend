@@ -1,33 +1,59 @@
-import csv
+import json
 from django.core.management.base import BaseCommand
-from speaking.models import Speaking
-
+from speaking.models import TestInfo, TestTip, Expectation, SampleQuestion, SampleQuestionGuideline
 
 class Command(BaseCommand):
-    help = "CSV fayldan Speaking ma'lumotlarini yuklash"
+    help = 'Load initial test data from JSON file'
 
     def add_arguments(self, parser):
-        parser.add_argument("csv_file", type=str, help="CSV fayl manzili")
+        parser.add_argument(
+            'file_path',
+            type=str,
+            help='The path to the JSON file containing test data'
+        )
 
     def handle(self, *args, **options):
-        csv_file = options["csv_file"]
+        file_path = options['file_path']
 
-        with open(csv_file, encoding="utf-8") as f:
-            reader = csv.DictReader(f)
+        with open(file_path, 'r', encoding='utf-8') as f:
+            data = json.load(f)
 
-            count = 0
-            for row in reader:
-                part = row.get("part")
-                topic = row.get("topic")
-                question = row.get("question")
-                audio_file = row.get("audio_file")  # optional
+        # TestInfo
+        test_info = data['testInfo']
+        TestInfo.objects.update_or_create(
+            id=1,
+            defaults={
+                "questions": test_info["questions"],
+                "minutes": test_info["minutes"],
+                "task_types": test_info["taskTypes"]
+            }
+        )
 
-                Speaking.objects.get_or_create(
-                    part=part,
-                    topic=topic,
-                    question=question,
-                    defaults={"audio_file": audio_file},
-                )
-                count += 1
+        # TestTips
+        for tip in data['testTips']:
+            TestTip.objects.update_or_create(text=tip)
 
-            self.stdout.write(self.style.SUCCESS(f"{count} ta Speaking yozuv yuklandi ✅"))
+        # Expectations
+        for exp in data['expectations']:
+            Expectation.objects.update_or_create(text=exp)
+
+        # SampleQuestion
+        sq_data = data['sampleQuestion']
+        sq, created = SampleQuestion.objects.update_or_create(
+            task_title=sq_data["taskTitle"],
+            defaults={
+                "image_url": sq_data["imageUrl"],
+                "prompt": sq_data["prompt"],
+                "preparation": sq_data["preparation"],
+                "speaking": sq_data["speaking"]
+            }
+        )
+
+        # Guidelines
+        for g in sq_data['guidelines']:
+            SampleQuestionGuideline.objects.update_or_create(
+                sample_question=sq,
+                text=g
+            )
+
+        self.stdout.write(self.style.SUCCESS('Test data loaded successfully!'))

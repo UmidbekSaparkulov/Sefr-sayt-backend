@@ -1,0 +1,186 @@
+[
+    {
+      "title": "Part 1: Daily Conversation",
+      "type": "multiple-choice",
+      "audio_file": "listening/audio/conversation1.mp3",
+      "questions": [
+        {
+          "text": "Where are the speakers talking?",
+          "correct": "A",
+          "options": {
+            "A": "At a café",
+            "B": "At school",
+            "C": "At the office"
+          }
+        },
+        {
+          "text": "What are they mainly discussing?",
+          "correct": "A",
+          "options": {
+            "A": "A weekend plan",
+            "B": "A homework assignment",
+            "C": "A new movie"
+          }
+        },
+        {
+          "text": "Who is busy on Sunday?",
+          "correct": "B",
+          "options": {
+            "A": "John",
+            "B": "Mary",
+            "C": "Both of them"
+          }
+        },
+        {
+          "text": "What does John suggest?",
+          "correct": "C",
+          "options": {
+            "A": "Going to the park",
+            "B": "Watching a movie",
+            "C": "Having lunch together"
+          }
+        },
+        {
+          "text": "When do they decide to meet?",
+          "correct": "A",
+          "options": {
+            "A": "Saturday afternoon",
+            "B": "Sunday morning",
+            "C": "Friday night"
+          }
+        },
+        {
+          "text": "What is Mary’s attitude?",
+          "correct": "A",
+          "options": {
+            "A": "Excited",
+            "B": "Bored",
+            "C": "Angry"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Part 2: Short Talk",
+      "type": "gap-fill",
+      "audio_file": "listening/audio/part2_short_talk.mp3",
+      "questions": [
+        {
+          "text": "The marathon will be held on _______ May.",
+          "correct": "B",
+          "options": {
+            "A": "10th",
+            "B": "15th",
+            "C": "20th"
+          }
+        },
+        {
+          "text": "The event will start at _______ a.m.",
+          "correct": "B",
+          "options": {
+            "A": "6",
+            "B": "9",
+            "C": "11"
+          }
+        },
+        {
+          "text": "The starting point is _______ Park.",
+          "correct": "A",
+          "options": {
+            "A": "Central",
+            "B": "Downtown",
+            "C": "Green"
+          }
+        },
+        {
+          "text": "Runners should arrive _______ minutes early.",
+          "correct": "C",
+          "options": {
+            "A": "10",
+            "B": "20",
+            "C": "30"
+          }
+        },
+        {
+          "text": "Water stations will be set up every _______ kilometers.",
+          "correct": "B",
+          "options": {
+            "A": "1",
+            "B": "2",
+            "C": "3"
+          }
+        },
+        {
+          "text": "After the race, participants can get a _______ lunch.",
+          "correct": "A",
+          "options": {
+            "A": "free",
+            "B": "discounted",
+            "C": "paid"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Part 3: Academic Lecture",
+      "type": "multiple-choice",
+      "audio_file": "listening/audio/lecture1.mp3",
+      "questions": [
+        {
+          "text": "What is the main topic of the lecture?",
+          "correct": "B",
+          "options": {
+            "A": "Climate change",
+            "B": "Renewable energy",
+            "C": "Water pollution"
+          }
+        },
+        {
+          "text": "What does the professor explain first?",
+          "correct": "C",
+          "options": {
+            "A": "Solar power",
+            "B": "Wind turbines",
+            "C": "Fossil fuels"
+          }
+        },
+        {
+          "text": "What is mentioned as a benefit?",
+          "correct": "B",
+          "options": {
+            "A": "Low cost",
+            "B": "No pollution",
+            "C": "More jobs"
+          }
+        },
+        {
+          "text": "What problem does the speaker mention?",
+          "correct": "A",
+          "options": {
+            "A": "High maintenance cost",
+            "B": "Lack of sunlight",
+            "C": "Noise pollution"
+          }
+        },
+        {
+          "text": "What does the professor suggest?",
+          "correct": "A",
+          "options": {
+            "A": "Using more solar energy",
+            "B": "Reducing car usage",
+            "C": "Saving water"
+          }
+        },
+        {
+          "text": "Who will do the next presentation?",
+          "correct": "B",
+          "options": {
+            "A": "Sarah",
+            "B": "David",
+            "C": "Michael"
+          }
+        }
+      ]
+    }
+  ]
+  
