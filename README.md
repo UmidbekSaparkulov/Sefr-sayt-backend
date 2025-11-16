@@ -30,7 +30,7 @@ Django REST Framework bilan yaratilgan test platforma backend.
 ## Installation
 
 ```bash
-git clone git@github.com:USERNAME/REPO_NAME.git
+git clone git@github.com:UmidbekSaparkulov/Sefr-sayt-backend.git
 cd REPO_NAME
 python -m venv myvenv
 source myvenv/Scripts/activate
